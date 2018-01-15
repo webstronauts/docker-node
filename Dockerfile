@@ -24,6 +24,4 @@ ONBUILD RUN yarn install --prod --frozen-lockfile \
 # Bundle project source.
 ONBUILD COPY . .
 
-USER node
-
 ENTRYPOINT [ "/sbin/tini", "--" ]
